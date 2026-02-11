@@ -1,8 +1,11 @@
 <?php
 
 
-include_once('includes/config.php');
-
+if(file_exists("includes/config-custom.php")) {
+        include("includes/config-custom.php");
+}else {
+        include_once("includes/config.php");
+}
 // show PHP errors
 ini_set('display_errors', 1);
 

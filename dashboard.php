@@ -8,7 +8,11 @@
 
 include('header.php');
 include('functions.php');
-include_once("includes/config.php");
+if(file_exists("includes/config-custom.php")) {
+	include("includes/config-custom.php");
+}else {
+	include_once("includes/config.php");
+}
 
 ?>
 

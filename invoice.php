@@ -27,6 +27,7 @@ class invoicr extends FPDF_rotation
 	var $addText;
 	var $footernote;
 	var $dimensions;
+	var $currency;
 	
 	/*******************************************************************************
 	*                                                                              *
